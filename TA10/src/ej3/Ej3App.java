@@ -3,6 +3,8 @@ package ej3;
 import ej1.NumeroAleatorio;
 import myException.MyException;
 
+//@Author ElNotaCode (Eloi Martorell) 19/04/2022
+
 public class Ej3App {
 
 	public static void main(String[] args) throws MyException {
