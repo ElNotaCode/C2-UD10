@@ -1,5 +1,7 @@
 package myException;
 
+import java.util.Scanner;
+
 public class MyException extends Exception{
 	
 	//codigo exception
@@ -33,6 +35,13 @@ public class MyException extends Exception{
 		}
 		
 		return mensaje;
+		
+	}
+	
+	public String InputMismatchException(Scanner sc) {
+		
+		sc.next(); //pasamos el scanner
+		return "Se ha introducido un valor no numerico.";
 		
 	}
 	
