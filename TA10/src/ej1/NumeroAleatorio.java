@@ -15,13 +15,21 @@ public class NumeroAleatorio {
 	int MAX = 500;
 	
 	//va a tener un constructor por defecto donde se genera el numero mediante metodo y intentos se queda en 0;
-	protected NumeroAleatorio() {
+	public NumeroAleatorio() {
+		this.numero = generarNumero();
+		this.intentos = 0;
+	}
+	
+	//apliado por el ej3 constructor que nos permite generar de nuevo las variables
+	public NumeroAleatorio(int min, int max) {
+		this.MIN = min;
+		this.MAX = max;
 		this.numero = generarNumero();
 		this.intentos = 0;
 	}
 	
 	//va a tener un metodo para hacer random el numero
-	protected int generarNumero() {
+	private int generarNumero() {
 		
 		Random r = new Random();
 		return (r.nextInt(MAX)+MIN);
@@ -46,6 +54,17 @@ public class NumeroAleatorio {
 
 	public int getNumero() {
 		return numero;
+	}
+	
+	//ampliado por el ej3
+	public boolean calcularPar() {
+		
+		if(this.numero%2 == 0) {
+			return true;
+		}else {
+			return false;
+		}
+		
 	}
 	
 }

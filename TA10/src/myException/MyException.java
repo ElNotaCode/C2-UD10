@@ -24,6 +24,12 @@ public class MyException extends Exception{
 		case 1:
 			mensaje = "Esto es un objeto Exception.";
 			break;
+		case 2:
+			mensaje = "Es par.";
+			break;
+		case 3:
+			mensaje = "Es impar.";
+			break;
 		}
 		
 		return mensaje;
