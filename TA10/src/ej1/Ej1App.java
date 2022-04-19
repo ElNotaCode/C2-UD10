@@ -39,7 +39,7 @@ public class Ej1App {
 				// DONE: handle exception
 				System.out.println("Tienes que introducir un valor ENTERO!");
 				n.setIntentos(++intentos);
-				sc.next();//http://www.w3api.com/Java/InputMismatchException/
+				sc.next(); //http://www.w3api.com/Java/InputMismatchException/
 			}
 			
 		}while(!checkNumero);
