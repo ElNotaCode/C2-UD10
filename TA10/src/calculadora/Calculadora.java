@@ -4,33 +4,64 @@ package calculadora;
 
 public class Calculadora {
 	
-	public double sumar(double x, double y) {
+	double x;
+	double y;
+	
+	public Calculadora() {
+	}
+	
+	public Calculadora(int x) {
+		this.x = x;
+	}
+	
+	public Calculadora(int x, int y) {
+		this.x = x;
+		this.y = y;
+	}
+
+	public double sumar() {
 		return (x+y);
 	}
 	
-	public double restar(double x, double y) {
+	public double restar() {
 		return (x-y);
 	}
 	
-	public double multiplicar(double x, double y){
+	public double multiplicar(){
 		return (x*y);
 	}
 	
-	public double dividir(double x, double y){
+	public double dividir(){
 		return (x/y);
 	}
 	
-	public double potencia(double x, double y){
+	public double potencia(){
 		return (Math.pow(x, y));
 	}
 	
-	public double raizCuadrada(double x){
+	public double raizCuadrada(){
 		return (Math.sqrt(x));
 	}
 	
-	public double raizCubica(double x){
+	public double raizCubica(){
 		return (Math.cbrt(x));
 		
+	}
+
+	public double getX() {
+		return x;
+	}
+
+	public void setX(double x) {
+		this.x = x;
+	}
+
+	public double getY() {
+		return y;
+	}
+
+	public void setY(double y) {
+		this.y = y;
 	}
 	
 	
